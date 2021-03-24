@@ -1,0 +1,16 @@
+  {
+    "name": "gligli-stat",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Statistique gligli",
+    "browser_action": {
+        "default_icon" : "icons/logo.png",
+        "default_popup": "pages/main.html",
+        "default_title": "Gligli Stat"
+    },
+      "content_scripts": [{
+        "matches": ["*://*.chezgligli.net/*"],
+        "js": ["content.js", "jquery.js"]
+      }],   
+      "permissions": ["activeTab", "downloads"]
+}
