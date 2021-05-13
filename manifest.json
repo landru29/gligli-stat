@@ -8,9 +8,9 @@
         "default_popup": "pages/main.html",
         "default_title": "Gligli Stat"
     },
-      "content_scripts": [{
-        "matches": ["*://*.chezgligli.net/*"],
-        "js": ["content.js", "jquery.js"]
-      }],   
-      "permissions": ["activeTab", "downloads"]
+    "content_scripts": [{
+      "matches": ["https://www.chezgligli.net/*"],
+      "js": ["content.js", "jquery.js"]
+    }],   
+    "permissions": ["activeTab", "downloads", "tabs"]
 }
